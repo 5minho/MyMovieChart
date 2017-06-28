@@ -20,6 +20,16 @@
                         <view key="tableFooterView" contentMode="scaleToFill" id="7Ff-RZ-s6t">
                             <rect key="frame" x="0.0" y="108" width="375" height="58"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9II-NA-ulG">
+                                    <rect key="frame" x="136" y="14" width="102" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="더보기"/>
+                                    <connections>
+                                        <action selector="more:" destination="GsX-ZM-zJF" eventType="touchUpInside" id="1tv-q9-EDS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
@@ -79,6 +89,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="영화정보" id="Mj8-yy-Z1k"/>
+                    <connections>
+                        <outlet property="moreBtn" destination="9II-NA-ulG" id="5ee-Mx-Cec"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bep-Li-0uG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
